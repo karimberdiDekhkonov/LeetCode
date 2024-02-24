@@ -1,13 +1,11 @@
 package org.example;
 
-import org.example.easy.BestTimeToBuyAndSellStock1;
-import org.example.easy.RemoveDuplicates;
+import org.example.easy.RotateAnArray;
 
 public class Main {
     public static void main(String[] args) {
-        BestTimeToBuyAndSellStock1 stock = new BestTimeToBuyAndSellStock1();
-        int input [] = {7,1,5,3,6,4};
-        int service = stock.maxProfit(input);
-        System.out.println(service);
+        RotateAnArray rotateAnArray = new RotateAnArray();
+        int input [] = {1,2,3,4,5,6,7};
+        rotateAnArray.rotate(input, 3);
     }
 }
