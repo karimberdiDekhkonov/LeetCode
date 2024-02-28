@@ -1,14 +1,17 @@
 package org.example;
 
-import org.example.easy.ContainsDuplicate;
-import org.example.easy.RotateAnArray;
-import org.example.easy.SingleNumber;
+
+import com.sun.org.apache.xpath.internal.operations.Plus;
+import org.example.easy.PlusOne;
 
 public class Main {
     public static void main(String[] args) {
-        SingleNumber singleNumber = new SingleNumber();
-        int[] input = {1,1,2,3,4,5,6,2,3,4,5,6,7};
-        int b = singleNumber.singleNumber(input);
-        System.out.println(b);
+        PlusOne plusOne = new PlusOne();
+        int[] input = {9,9};
+        int[] ints = plusOne.plusOne(input);
+
+        for (int anInt : ints) {
+            System.out.print(anInt+", ");
+        }
     }
 }
