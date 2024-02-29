@@ -1,14 +1,14 @@
 package org.example;
 
 
-import com.sun.org.apache.xpath.internal.operations.Plus;
-import org.example.easy.PlusOne;
+import org.example.easy.TwoSum;
 
 public class Main {
     public static void main(String[] args) {
-        PlusOne plusOne = new PlusOne();
-        int[] input = {9,9};
-        int[] ints = plusOne.plusOne(input);
+        TwoSum twoSum = new TwoSum();
+        int[] input = {9,9,4,3};
+
+        int[] ints = twoSum.twoSum(input, 18);
 
         for (int anInt : ints) {
             System.out.print(anInt+", ");
