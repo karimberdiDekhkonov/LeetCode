@@ -1,4 +1,4 @@
-package org.example.easy;
+package org.example.easy.array;
 
 
 //28.02.2024

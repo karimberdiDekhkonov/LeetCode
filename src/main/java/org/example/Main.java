@@ -1,27 +1,26 @@
 package org.example;
 
 
-import org.example.easy.TwoSum;
-import org.example.easy.ValidSudoku;
+import org.example.easy.array.RotateImage;
+import org.example.easy.array.ValidSudoku;
 
 public class Main {
     public static void main(String[] args) {
-        ValidSudoku validSudoku = new ValidSudoku();
-        char[][] input = {
-                {'8','3','.','.','7','.','.','.','.'},
-                {'6','4','.','1','9','5','.','.','.'},
-                {'.','9','1','.','.','.','.','6','.'},
-                {'1','.','.','.','6','2','.','.','3'},
-                {'4','.','.','8','.','3','.','.','1'},
-                {'7','.','.','.','2','.','.','.','6'},
-                {'.','6','.','.','.','.','2','8','.'},
-                {'.','.','.','4','1','9','.','.','5'},
-                {'2','.','.','.','8','.','.','7','9'}
+
+        RotateImage rotateImage = new RotateImage();
+        int[][] matrix = {
+                {1, 2, 3},
+                {4, 5, 6},
+                {7, 8, 9}
         };
+        rotateImage.rotate(matrix);
 
-
-        boolean response = validSudoku.isValidSudoku(input);
-
-        System.out.println(response);
+        // Printing the rotated matrix
+        for (int[] ints : matrix) {
+            for (int anInt : ints) {
+                System.out.print(anInt + " ");
+            }
+            System.out.println();
+        }
     }
 }

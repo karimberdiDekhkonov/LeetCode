@@ -1,4 +1,4 @@
-package org.example.easy;
+package org.example.easy.array;
 
 public class RemoveElement {
         public int removeElement(int[] nums, int val) {
