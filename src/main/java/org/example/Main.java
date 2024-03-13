@@ -4,12 +4,12 @@ package org.example;
 import org.example.easy.array.RotateImage;
 import org.example.easy.array.ValidSudoku;
 import org.example.easy.string.ReverseInteger;
+import org.example.easy.string.ValidPalindrome;
 
 public class Main {
     public static void main(String[] args) {
-        ReverseInteger reverseInteger = new ReverseInteger();
-
-        int i = reverseInteger.reserveInt(321);
-        System.out.println(i);
+        ValidPalindrome validPalindrome = new ValidPalindrome();
+        boolean result = validPalindrome.isValidPalindrome("aol.32l.o.a");
+        System.out.println(result);
     }
 }
