@@ -1,5 +1,11 @@
 package org.example.easy.dynamicProgramming;
 
+//14.04.2024
+//LINK: https://leetcode.com/explore/interview/card/top-interview-questions-easy/97/dynamic-programming/572/
+//OUR APPROACH IS BASED FIBONACCI SEQUENCE THAT WE ITERATIVELY FILL UP ARRAY WITH POSSIBLE NUMBER OF WAYS BASED ON IT'S INDEX NUMBER
+//TIME COMPLEXITY: O(n)
+//SPACE COMPLEXITY: O(n)
+
 public class ClimbingStairs {
     public int climbStairs(int n){
         if (n <= 1){
